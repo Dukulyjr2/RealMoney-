@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RealMoneyApp - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to RealMoneyApp!</h1>
+    <p>Balance: <span id="balance">Loading...</span> LD</p>
+    <p>Your Referral Link: <input type="text" id="referralLink" value="https://realmoneyapp.com/?ref=YOURID" readonly></p>
+    <button onclick="copyReferral()">Copy Referral Link</button><br><br>
+    <button onclick="withdraw()">Withdraw Money</button>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
