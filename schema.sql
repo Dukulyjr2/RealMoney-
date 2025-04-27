@@ -1,0 +1,16 @@
+CREATE TABLE users (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  phone VARCHAR(255) NOT NULL,
+  balance INT(11) DEFAULT 0,
+  referral_code VARCHAR(255)
+);
+
+CREATE TABLE withdrawals (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255),
+  amount INT(11),
+  status VARCHAR(50) DEFAULT 'Pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
